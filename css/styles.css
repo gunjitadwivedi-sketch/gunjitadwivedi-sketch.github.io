@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&family=Rubik+Puddles&display=swap');
 
-/*GLOBAL*/
+/*
+ * WEBD-225 Final Optimizations - Global Styles
+ * Includes fixes for responsiveness, LCP, and universal structure.
+ */
+
+/* Optimization: Body Flexbox & Padding - Ensures content clears fixed navbar (56px) and footer is at the bottom (Required Fix) */
 body {
-    padding-top: 5rem;
+    padding-top: 56px; /* Space for the fixed-top navbar */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -11,19 +19,16 @@ h1,h2,h3,h4,h5,h6 {
 
 main {
     padding: 20px;
+    flex-grow: 1; /* Pushes the footer down */
 }
 
 main.container-fluid {
-    width: 50%;
+    width: 50%; /* Keep your existing style */
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
-}
-
-nav {
-    margin-bottom: 120px;
 }
 
 .navbar-brand {
@@ -38,11 +43,35 @@ button.navbar-toggler{
     margin-bottom: 20px;
 }
 
-img.dibley {
-    max-width: 100%
+/* Optimization: Image Max Width - Crucial fix for LCP issue on mobile and general responsiveness (Required Fix) */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
 }
 
-/* CSS Grid Layout for grid.html */
+/* * REQUIREMENT: Responsiveness & Adaptation - Media Queries (Required Fix)
+ * Adjusts layout and font for smaller screens for better usability and readability.
+ */
+@media (max-width: 575.98px) {
+    
+    /* Optimization: Font Size Adjustment for better mobile readability */
+    h1 {
+        font-size: 2rem; 
+        margin-top: 1rem;
+    }
+    p, li, label {
+        font-size: 1.1rem; /* Adjusting text size for small screens */
+    }
+}
+
+/* REQUIREMENT: Footer Styling */
+footer {
+    font-size: 0.8rem;
+}
+
+
+/* CSS Grid Layout for grid.html (Your original styles) */
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,40 +80,17 @@ img.dibley {
 }
 
 .box {
-    background-color: #FFC0CB; /* A light pink color */
-    border: 1px solid #FFFFFF; /* White border */
+    background-color: #FFC0CB; 
+    border: 1px solid #FFFFFF; 
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
-    font-family: 'Rubik Puddles', system-ui; /* The pretty font you requested */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Rubik Puddles', system-ui;
 }
 
-.box1 {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-}
-
-.box2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.box3 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.box4 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-.box5 {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-}
-
-.box6 {
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-}
+.box1 { grid-column: 1 / 4; grid-row: 1 / 2; }
+.box2 { grid-column: 1 / 2; grid-row: 2 / 3; }
+.box3 { grid-column: 2 / 3; grid-row: 2 / 3; }
+.box4 { grid-column: 3 / 4; grid-row: 2 / 3; }
+.box5 { grid-column: 1 / 4; grid-row: 3 / 4; }
+.box6 { grid-column: 1 / 4; grid-row: 4 / 5; }
