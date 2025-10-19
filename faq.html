@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>FAQ: Gunjita Dwivedi</title> 
+
+    <meta name="description" content="Find answers to frequently asked questions about Gunjita Dwivedi's web development projects and course material.">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Gunjita Dwivedi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="grid.html">Grid</a></li>
+                <li class="nav-item"><a class="nav-link" href="carousel.html">Carousel</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main class="container my-5 pt-5">
+        <h1 class="mb-4">Frequently Asked Questions (FAQ)</h1>
+        
+        <p class="lead">
+            Find quick answers to common questions about this website, the course material, and my projects. This page uses the **Bootstrap Accordion** component for a clean, navigable design, crucial for mobile usability.
+        </p>
+
+        <div class="accordion mt-4" id="faqAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What was the primary focus of this final optimization assignment?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The assignment focused on **performance optimization** (specifically fixing the LCP issue found in the Lighthouse audit), improving **responsiveness** with media queries, and ensuring high **accessibility** and **SEO** scores across all six pages of the website.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How was the low mobile Performance score fixed?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The low score was primarily due to an issue with **Largest Contentful Paint (LCP)** caused by a large, unoptimized image. The fix involved **compressing the image file** to reduce its byte size and adding the `max-width: 100%;` CSS property for efficient scaling.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What other universal elements were added to all pages?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        All pages now include a **custom favicon** for branding, a consistent **footer**, updated **SEO meta tags**, and a fully working, responsive **navigation bar** that includes links to all six pages.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="mt-5">
+             <h2 class="h4">More Help</h2>
+             <p>If your question wasn't answered here, please visit the <a href="contact.html">Contact page</a> to send a direct message!</p>
+        </section>
+    </main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p class="mb-0">
+            &copy; 2025 Gunjita Dwivedi. All Rights Reserved. | WEBD-225 Final Optimizations.
+        </p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

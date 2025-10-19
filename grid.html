@@ -1,42 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="CSS Grid Layout Practice">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Gunjita Dwivedi's Web Development II project practicing advanced CSS Grid Layout techniques.">
     <meta name="author" content="Gunjita Dwivedi">
-    <title>CSS Grid Layout - Gunjita Dwivedi</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Grid: Gunjita Dwivedi</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Gunjita Dwivedi</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="grid.html">Grid</a>
-            </li>
-            <li class="nav-item"> 
-                <a class="nav-link" href="carousel.html">Carousel</a>
-            </li>
-            <li class="nav-item"> 
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-        </ul>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Gunjita Dwivedi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="grid.html">Grid</a></li>
+                <li class="nav-item"><a class="nav-link" href="carousel.html">Carousel</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-<main role="main" class="container-fluid">
+<main class="container my-5 pt-5">
 
-    <h2>Practicing with CSS Grid</h2>
+    <h1>Practicing with CSS Grid</h1>
+    
+    <p>This page demonstrates the power of CSS Grid Layout, which allows for complex, two-dimensional page design. By controlling rows and columns precisely, we can create adaptable and organized content areas.</p>
+    
     <div class="wrapper">
         <div class="box box1">One</div>
         <div class="box box2">Two</div>
@@ -45,8 +50,19 @@
         <div class="box box5">Five</div>
         <div class="box box6">Six</div>
     </div>
+    
+    <h2>Grid Principles</h2>
+    <p>CSS Grid is an excellent tool for building main page layouts, unlike Flexbox, which is better suited for aligning items in a single dimension. Using a grid here provides a visual structure for the elements, which can be easily adapted using media queries.</p>
 
 </main>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+        <p class="mb-0">
+            &copy; 2025 Gunjita Dwivedi. All Rights Reserved. | WEBD-225 Final Optimizations.
+        </p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
